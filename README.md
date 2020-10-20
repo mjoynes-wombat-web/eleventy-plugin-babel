@@ -17,7 +17,7 @@ npm i -D eleventy-plugin-sass
 Open up your Eleventy config file (probably `eleventy.js`) and use addPlugin:
 
 ```javascript
-const pluginBabel = require('eleventy-plugin-sass');
+const pluginBabel = require('eleventy-plugin-js');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginBabel, babelPluginOptions);
