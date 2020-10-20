@@ -3,7 +3,6 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const _debounce = require('lodash.debounce');
 const chalk = require('chalk');
-const vfs = require('vinyl-fs');
 const gulpIf = require('gulp-if');
 const chokidar = require('chokidar');
 const _merge = require('lodash.merge');
@@ -13,6 +12,7 @@ const PLUGIN_NAME = 'Eleventy-Plugin-Babel';
 const PLUGIN_SHORT = 'PB';
 const defaultOptions = {
   watch: ['**/*.js', '!node_modules/**'],
+  outputDir: 'dist/js',
   babel: {
     presets: ['@babel/env'],
   },
