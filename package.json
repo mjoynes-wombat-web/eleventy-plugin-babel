@@ -1,0 +1,112 @@
+{
+  "name": "eleventy-plugin-babel",
+  "version": "1.0.0",
+  "description": "Plugin to use gulp-babel to transpile JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simeon Smith",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "chalk": "^4.1.0",
+    "chokidar": "^3.4.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "lodash.debounce": "^4.0.8",
+    "lodash.merge": "^4.6.2",
+    "vinyl-fs": "^3.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-prettier",
+      "stylelint-config-recommended-scss"
+    ],
+    "plugins": [
+      "stylelint-prettier",
+      "stylelint-scss"
+    ],
+    "rules": {
+      "max-nesting-depth": [
+        3,
+        {
+          "ignore": [
+            "blockless-at-rules",
+            "pseudo-classes"
+          ]
+        }
+      ],
+      "prettier/prettier": [
+        true,
+        {
+          "parser": "scss"
+        }
+      ]
+    }
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "modules": true
+      }
+    },
+    "plugins": [
+      "eslint-plugin-prettier"
+    ],
+    "extends": [
+      "esnext",
+      "esnext/style-guide",
+      "node",
+      "node/style-guide",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        1
+      ],
+      "import/no-commonjs": 0
+    },
+    "env": {
+      "browser": true
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "semi": true,
+    "useTabs": false,
+    "arrowParens": "always",
+    "proseWrap": "preserve"
+  },
+  "sass": {
+    "includePaths": [
+      "node_modules"
+    ]
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
