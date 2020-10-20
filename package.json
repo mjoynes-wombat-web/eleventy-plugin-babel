@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-babel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin to use gulp-babel to transpile JS.",
   "main": "index.js",
   "scripts": {
