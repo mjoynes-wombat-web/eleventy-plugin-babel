@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Simeon Smith",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
@@ -19,8 +19,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "lodash.debounce": "^4.0.8",
-    "lodash.merge": "^4.6.2",
-    "vinyl-fs": "^3.0.3"
+    "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
     "eslint": "^7.11.0",
