@@ -9,7 +9,7 @@ A plugin for [11ty](https://www.11ty.dev/) to compile JS with [gulp-babel](https
 Available on [npm](https://www.npmjs.com/).
 
 ```bash
-npm i -D eleventy-plugin-sass
+npm i -D eleventy-plugin-babel
 ```
 
 ## Using Plugin
