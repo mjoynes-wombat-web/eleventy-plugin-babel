@@ -30,8 +30,8 @@ Read more about [Eleventy plugins](https://www.11ty.dev/docs/plugins/).
 
 | Key        | Type                   | Default                           | Description                                                                                                      |
 | ---------- | ---------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Watch      | glob or array of globs | `['**/*.js', '!node_modules/**']` | The JS files or matches of the files you wish to compile (and watch when you serve).                             |
-| Uglify     | boolean                | `false`                           | If you wish your JS code to be uglified using [babel-uglify](https://github.com/terinjokes/gulp-uglify/)         |
+| watch      | glob or array of globs | `['**/*.js', '!node_modules/**']` | The JS files or matches of the files you wish to compile (and watch when you serve).                             |
+| uglify     | boolean                | `false`                           | If you wish your JS code to be uglified using [babel-uglify](https://github.com/terinjokes/gulp-uglify/)         |
 | outputDir  | String                 | `"dist/js"`                       | The directory where the compiled JS will output.                                                                 |
 | sourceMaps | Boolean                | `false`                           | If you'd liked to output sourcemaps using [gulp-sourcemaps](https://github.com/gulp-sourcemaps/gulp-sourcemaps)  |
 | babel      | gulp-babel options     | `{ presets: ['@babel/env'] }`     | Options that are passed to gulp-babel. See [gulp-babel](https://github.com/babel/gulp-babel#readme) for options. |
